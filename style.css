@@ -1,0 +1,191 @@
+
+body {
+  background: linear-gradient(90deg, #00dbde 0%, #fc00ff 100%);
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-size: 2rem;
+  color: white;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.btncontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.line {
+  display: flex;
+}
+
+.btn {
+  height: 150px;
+  width: 150px;
+  border-radius: 20%;
+  border: 10px solid black;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.red {
+  background-color: #d95980;
+}
+.yellow {
+  background-color: #f99b45;
+}
+.green {
+  background-color: #63aac0;
+}
+.purple {
+  background-color: #819ff9;
+}
+
+.flash {
+  background-color: white !important;
+}
+
+.userflash {
+  background-color: green !important;
+  animation: userPulse 0.3s ease-in-out;
+}
+
+@keyframes userPulse {
+  0% {
+    background-color: green;
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes colorChange {
+  0% {
+    background-color: #ff0000;
+  }
+  25% {
+    background-color: #00ff00;
+  }
+  50% {
+    background-color: #0000ff;
+  }
+  75% {
+    background-color: #ffff00;
+  }
+  100% {
+    background-color: #ff0000;
+  }
+}
+
+.color-change {
+  animation: colorChange 5s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate {
+  animation: rotate 2s linear infinite;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.fade-in-out {
+  animation: fadeInOut 3s ease-in-out infinite;
+}
+
+body {
+  animation: gradientAnimation 10s ease infinite;
+  background-size: 200% 200%;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+h1 {
+  text-shadow: 2px 2px 4px #000000;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+h1:hover {
+  transform: scale(1.1);
+  color: #ffd700;
+}
+
+.btn {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease-in-out;
+}
+
+.btn:hover {
+  transform: translateY(-5px);
+}
+
+.red {
+  background: linear-gradient(to bottom, #d95980, #ff0055);
+}
+
+.yellow {
+  background: linear-gradient(to bottom, #f99b45, #ff8c00);
+}
+
+.green {
+  background: linear-gradient(to bottom, #63aac0, #00b386);
+}
+
+.purple {
+  background: linear-gradient(to bottom, #819ff9, #6a0dad);
+}
+
+.flash {
+  animation: pulse 0.5s ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: white;
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
